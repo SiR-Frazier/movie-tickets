@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|VT323" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
@@ -10,7 +11,12 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container" id="images">
+      <img src="img/shape.jpg" alt="sow">
+      <img src="img/coco.jpg" alt="coco">
+      <img src="img/007.jpg" alt="007">
+    </div>
+    <div class="container" id="content">
       <div class="jumbotron">
         <h1>Movie Ticket Price</h1>
       </div>
@@ -28,9 +34,9 @@
           <label for="time">Time</label>
           <select class="form-control" id="time">
             <option>Select Time</option>
-            <option>10:00AM</<option>
-            <option>4:00PM</<option>
-            <option>8:00PM</option>
+            <option value="10:00AM">10:00AM</<option>
+            <option value="4:00PM">4:00PM</<option>
+            <option value="8:00PM">8:00PM</option>
           </select>
         </div>
         <div class="form-group">
@@ -39,8 +45,12 @@
         </div>
         <button type="submit" class="btn btn-primary">Add</button>
       </form>
-      <div class="ticket-entry">
-        <div class="well">
+      <div class="well">
+        <div class="ticket-entry">
+        <div class="SOW">
+          <img src="" alt="">
+        </div>
+
         </div>
       </div>
     <div>

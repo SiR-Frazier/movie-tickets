@@ -1,7 +1,42 @@
-.jumbotron {
-  text-align: center;
+#content {
+  background-image: url("../img/popcorn.jpg");
+  background-repeat: no-repeat;
+  height: 800px;
+  margin-top: 100px;
 }
 
+.container #images{
+  display: block;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: rgba(0,0,0, 0.7);
+  color:white;
+  margin-top: 10px;
+  font-family: 'VT323', monospace;
+}
+.jumbotron h1 {
+  font-size: 5em;
+}
 .well {
   margin-top: 20px;
+  background-color: rgba(0,0,0, 0.7);
+  color:white;
+  width: 500px;
+  text-align:center;
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  background-color: black;
+}
+
+img {
+  max-width: 375px;
+  max-height: 375px;
+  /*margin-top: 40px;
+  margin-right:115px;*/
 }

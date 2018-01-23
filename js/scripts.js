@@ -4,36 +4,42 @@ function Ticket(title, time, age){
   this.time = time;
   this.age = age;
 }
-  var matineePrice= 10
-  var nightPrice= 12
 
-Ticket.prototype.time = function () {
-    if (time==="10:00AM" || time==="4:00PM") {
-      return matineePrice
-    } else {
-      return nightPrice
-    }
-  }
+function inputTicket() {
+var inputtedTitle = $("#title").val();
+var inputtedTime = $("#time").val();
+var inputtedAge = parseInt($("input#age").val());
+var newTicket = new Ticket(inputtedTitle, inputtedTime, inputtedAge);
 
- Ticket.prototype.age = function (){
-    if (parseInt(this.age)<18 || parseInt(this.age)>65) {
-      return time()-=2;
-    else {
-      return time();
-    }
-  }
+return newTicket
+}
 
-Ticket.prototype.movie = function (){
-
+Ticket.prototype.price = function(){
+var cost = 0;
+if (this.title === "The Shape of Water"){
+  cost=15;
+} else {
+  cost=12;
+}
+if (this.time==="10:00AM" || this.time==="4:00PM"){
+  cost=cost-2
+} else {
+  cost;
+}
+if (this.age < 18 || this.age > 65){
+  cost=cost-2
+} else {
+  cost;
+}
+  return cost;
 }
 
 // frontend logic
 $(document).ready(function(){
   $("form#ticket").submit(function(event){
     event.preventDefault();
+    var ticket = inputTicket();
 
-    var inputtedTitle = $("input#title").val();
-    var inputtedTime = $("input#time").val();
-    var inputtedAge = $("input#age").val();
+    $(".ticket-entry").text(ticket.price());
   });
 });

@@ -6,10 +6,43 @@
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Movie Tickets</title>
   </head>
-  
-  <body>
 
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Movie Ticket Price</h1>
+      </div>
+      <form id="ticket" class="well">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <select class="form-control" id="title">
+            <option>Select Title</option>
+            <option>The Shape of Water</<option>
+            <option>From Russia, With Love</<option>
+            <option>Coco</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <select class="form-control" id="time">
+            <option>Select Time</option>
+            <option>10:00AM</<option>
+            <option>4:00PM</<option>
+            <option>8:00PM</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input type="number" class="form-control" id="age">
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+      <div class="ticket-entry">
+        <div class="well">
+        </div>
+      </div>
+    <div>
   </body>
 </html>

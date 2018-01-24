@@ -37,6 +37,5 @@ body {
 img {
   max-width: 375px;
   max-height: 375px;
-  /*margin-top: 40px;
-  margin-right:115px;*/
+  margin:60px;
 }

@@ -40,6 +40,6 @@ $(document).ready(function(){
     event.preventDefault();
     var ticket = inputTicket();
 
-    $(".ticket-entry").text(ticket.price());
+    $(".ticket-entry").text("Your ticket is $" + ticket.price());
   });
 });
